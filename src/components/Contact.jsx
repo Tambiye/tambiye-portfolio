@@ -1,4 +1,9 @@
-import { FaWhatsapp, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaLinkedin,
+  FaInstagram,
+  FaEnvelope
+} from "react-icons/fa";
 import "../App.css";
 
 export default function Contact() {

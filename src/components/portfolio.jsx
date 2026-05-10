@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../App.css";
-
+import Contact from "./Contact";
 
 export default function Portfolio() {
 
@@ -422,7 +422,7 @@ useEffect(() => {
         
       </section>
 
-
+<Contact />
 
       {/* FOOTER */}
       <footer className="footer reveal">
