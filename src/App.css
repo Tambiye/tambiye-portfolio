@@ -540,16 +540,45 @@ body::before {
 /* ========================= */
 /* PROJECTS SECTION */
 /* ========================= */
+
+ .project-headings {
+  padding: clamp(5rem, 8vw, 7rem) clamp(1.25rem, 4vw, 2.5rem);
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;}
+.projects-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #7d7d7d;
+
+  font-family: "Space Grotesk", sans-serif;
+}
+
 .heading-title {
   font-family: "JetBrains Mono", monospace;
+
   font-size: clamp(1.5rem, 6vw, 2rem);
   font-weight: 900;
+
   line-height: 0.95;
   letter-spacing: -0.05em;
+
   color: #c8f04a;
-padding: clamp(5rem, 8vw, 7rem) clamp(1.25rem, 4vw, 2.5rem);
-  max-width:8ch;
-  margin: 0 auto;
+
+  /* margin-bottom: 3rem; */
+
+  max-width: 8ch;
 }
 .projects {
   position: relative;
@@ -724,6 +753,7 @@ background: #0b1219;
   font-size: 0.95rem;
   line-height: 1.7;
   color: #cbd5e1;
+  max-width: 900px;
 }
 
 .project-body p+p {
@@ -1001,7 +1031,7 @@ background: #0b1219;
 
 .contact-section {
   padding: clamp(5rem, 8vw, 7rem) clamp(1.25rem, 4vw, 2.5rem);
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -1020,7 +1050,7 @@ background: #0b1219;
 .contact-title {
   font-family: "JetBrains Mono", monospace;
 
-  font-size: clamp(2rem, 6vw, 4rem);
+  font-size: clamp(1rem, 6vw, 2rem);
   font-weight: 900;
 
   line-height: 0.95;
@@ -1035,7 +1065,7 @@ background: #0b1219;
 .contact-text {
   max-width: 620px;
 
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 1.8;
 
   color: #94A3B8;
@@ -1062,8 +1092,8 @@ background: #0b1219;
 
   background: rgba(17, 24, 39, 0.65);
 
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 18px;
+  /* border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px; */
 
   text-decoration: none;
 
@@ -1114,7 +1144,7 @@ background: #0b1219;
   justify-content: center;
 
   background: rgba(96, 165, 250, 0.1);
-  color: #60A5FA;
+  color: #c8f04a;
 
   flex-shrink: 0;
 }
@@ -1127,7 +1157,7 @@ background: #0b1219;
 
 /* TEXT */
 .contact-card h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
 
   color: #E6EDF3;
@@ -1136,7 +1166,7 @@ background: #0b1219;
 }
 
 .contact-card p {
-  font-size: 0.92rem;
+  font-size: 0.7rem;
 
   color: #94A3B8;
 
@@ -1155,4 +1185,43 @@ background: #0b1219;
   .contact-title {
     max-width: 100%;
   }
+}
+
+.footer {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: rgba(230, 237, 243, 0.6);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  background: #0b1219;
+
+  position: relative;
+}
+
+/* subtle glow line */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 40%;
+  height: 1px;
+
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(200, 240, 74, 0.4),
+      transparent);
+}
+
+/* hover subtle polish */
+.footer:hover {
+  color: rgba(230, 237, 243, 0.85);
 }

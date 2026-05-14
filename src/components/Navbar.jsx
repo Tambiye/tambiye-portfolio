@@ -64,7 +64,7 @@ function Navbar() {
       <ul className="nav-links">
         <li><button onClick={() => scrollToSection("about")}>About</button></li>
         <li><button onClick={() => scrollToSection("services")}>Services</button></li>
-        <li><button onClick={() => scrollToSection("projects")}>Work</button></li>
+        <li><button onClick={() => scrollToSection("projects-section")}>Work</button></li>
         <li><button onClick={() => scrollToSection("contact")}>Contact</button></li>
       </ul>
 
@@ -103,7 +103,7 @@ function Navbar() {
           onClick={() => scrollToSection("contact")}
           className="mobile-menu-button"
         >
-          Get Started
+          Click Me
         </button>
       </div>
 

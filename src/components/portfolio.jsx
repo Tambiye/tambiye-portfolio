@@ -102,12 +102,17 @@ useEffect(() => {
       </section>
 
       {/* PROJECTS */}
-      <h2 className="heading-title reveal">
+     
+
+      <section id="projects-section">
+        <div className="project-headings"><span className="projects-label reveal delay-1">
+          Projects
+        </span>
+<h2 className="heading-title">
         Tambiye's Projects
-      </h2>
-
-      <section className="projects">
-
+      </h2></div>
+         
+<div className="projects">
         {/* Ribalta */}
         <article className="project reveal delay-1">
           <div className="project-title">01</div>
@@ -419,13 +424,43 @@ useEffect(() => {
     </p>
   </div>
 </article>
+{/* Playcia */}
+<article className="project reveal delay-4">
+  <div className="project-title">11</div>
+
+  <div className="project-meta">
+    <h3>Playcia</h3>
+
+    <p>
+      Full Ownership ·{" "}
+      <a
+        href="https://playcia.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-link"
+      >
+        View Project
+      </a>
+    </p>
+  </div>
+
+  <div className="project-body">
+    <p>
+      My most ambitious gaming web app so far.
+    </p>
+<p>
+  It pushed my frontend skills with games, animations, and smooth UI.
+</p>
+  </div>
+</article>
+</div>
         
       </section>
 
 <Contact />
 
       {/* FOOTER */}
-      <footer className="footer reveal">
+      <footer className="footer">
         © {new Date().getFullYear()} Sonia Jamabo.
         All rights reserved.
       </footer>
